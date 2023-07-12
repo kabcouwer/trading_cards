@@ -31,7 +31,7 @@ const CardLayout = (props: Card) => {
       </div>
       <h3 className="font-semibold">{name}</h3>
       <p className="mt-1 font-medium text-gray-900">Quantity: {quantity}</p>
-      <p className="mt-1 font-medium text-gray-900">Price: ${price}</p>
+      <p className="mt-1 font-medium text-gray-900">Price: ${parseFloat(price).toFixed(2)}</p>
     </a>
   );
 };
