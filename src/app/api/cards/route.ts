@@ -7,7 +7,7 @@ export async function GET() {
     const response = await fetch(DATA_SOURCE_URL);
     const cards: Card[] = await response.json();
 
-    const ITEMS_PER_PAGE = 10;
+    const ITEMS_PER_PAGE = 12;
 
     return NextResponse.json({
       success: true,
